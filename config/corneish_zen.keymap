@@ -113,9 +113,9 @@
 
         layer_5 {
             bindings = <
-&trans  &trans     &trans  &trans     &trans   &trans      &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans     &trans  &trans     &trans   &trans      &trans    &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &trans     &trans  &trans     &trans   &trans      &kp LEFT  &kp DOWN          &kp UP             &kp RIGHT             &trans                 &trans
-&trans  &kp MINUS  &trans  &kp EQUAL  &kp DOT  &kp PLUS    &trans    &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LESS_THAN         &kp GREATER_THAN       &trans
+&trans  &kp MINUS  &trans  &kp EQUAL  &kp DOT  &kp PLUS    &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &trans
                            &trans     &trans   &trans      &trans    &trans            &trans
             >;
         };
