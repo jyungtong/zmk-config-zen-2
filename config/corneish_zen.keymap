@@ -27,6 +27,15 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        grave_esc: grave_esc {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRAVE_ESC";
+            bindings = <&kp ESCAPE>, <&kp GRAVE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
     };
 
     keymap {
@@ -42,7 +51,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&gresc              &kp Q  &kp W  &kp E     &kp R        &kp T              &kp Y        &kp U        &kp I      &kp O    &kp P     &kp BACKSLASH
+&grave_esc          &kp Q  &kp W  &kp E     &kp R        &kp T              &kp Y        &kp U        &kp I      &kp O    &kp P     &kp BACKSLASH
 &mt LEFT_SHIFT TAB  &kp A  &kp S  &kp D     &kp F        &kp G              &kp H        &kp J        &kp K      &kp L    &kp SEMI  &mt RIGHT_SHIFT APOSTROPHE
 &kp LEFT_CONTROL    &kp Z  &kp X  &kp C     &kp V        &kp B              &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH  &sk RC(RIGHT_SHIFT)
                                   &kp LGUI  &lt 5 SPACE  &lt 3 BACKSPACE    &lt 3 ENTER  &lt 4 SPACE  &kp RALT
@@ -62,7 +71,7 @@
 &trans  &kp N1           &kp N2          &kp N3             &kp N4            &kp N5             &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
 &trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3       &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
 &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON  &rgb_ug RGB_EFF    &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans             &trans            &trans             &kp INS          &kp DEL          &trans
+                                         &trans             &trans            &trans             &trans           &trans           &trans
             >;
         };
 
@@ -97,7 +106,7 @@
             bindings = <
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &kp N1           &kp N2       &kp N3     &kp N4      &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
-&trans  &kp MINUS        &trans       &kp EQUAL  &trans      &kp PLUS       &trans     &trans         &trans        &trans                &trans                 &trans
+&trans  &kp MINUS        &trans       &kp EQUAL  &kp DOT     &kp PLUS       &trans     &trans         &trans        &trans                &trans                 &trans
                                       &trans     &trans      &trans         &trans     &trans         &trans
             >;
         };
