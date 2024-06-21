@@ -34,7 +34,7 @@
             bindings = <&kp ESCAPE>, <&kp GRAVE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LGUI)>;
+            mods = <(MOD_LGUI|MOD_RALT)>;
         };
 
         td1: td1 {
