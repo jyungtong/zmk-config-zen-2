@@ -65,13 +65,14 @@
             bindings = <&bt BT_SEL 2>, <&bt BT_DISC 2>;
         };
 
-        mm0: mm0 {
+        mm_shift_capslk: mm_shift_capslk {
             compatible = "zmk,behavior-mod-morph";
-            label = "MM0";
+            label = "MM_SHIFT_CAPSLK";
             bindings = <&mt LEFT_SHIFT TAB>, <&td0>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI|MOD_RALT)>;
+            keep-mods = <(MOD_LGUI)>;
         };
 
         td_reset_bootloader: td_reset_bootloader {
@@ -96,7 +97,7 @@
 
             bindings = <
 &grave_esc        &kp Q  &kp W  &kp E     &kp R        &kp T              &kp Y        &kp U        &kp I      &kp O    &kp P     &kp BACKSLASH
-&mm0              &kp A  &kp S  &kp D     &kp F        &kp G              &kp H        &kp J        &kp K      &kp L    &kp SEMI  &mt RIGHT_SHIFT APOSTROPHE
+&mm_shift_capslk  &kp A  &kp S  &kp D     &kp F        &kp G              &kp H        &kp J        &kp K      &kp L    &kp SEMI  &mt RIGHT_SHIFT APOSTROPHE
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V        &kp B              &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH  &td1
                                 &kp LGUI  &lt 4 SPACE  &lt 3 BACKSPACE    &lt 3 ENTER  &lt 4 SPACE  &kp RALT
             >;
