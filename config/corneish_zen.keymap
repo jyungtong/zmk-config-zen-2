@@ -96,10 +96,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans           &trans          &trans             &trans            &sys_reset         &trans           &trans           &trans           &trans           &trans    &trans
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1       &bt BT_SEL 2      &bt BT_SEL 3       &trans           &trans           &trans           &trans           &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON  &rgb_ug RGB_EFF    &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans             &trans            &trans             &trans           &trans           &trans
+&trans        &trans           &trans          &trans             &trans            &sys_reset         &sys_reset       &trans           &trans           &trans           &trans  &trans
+&out OUT_TOG  &bt BT_CLR       &bt_td0         &bt_td1            &bt_td2           &trans             &trans           &trans           &trans           &trans           &trans  &trans
+&trans        &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON  &rgb_ug RGB_EFF    &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans  &trans
+                                               &trans             &trans            &trans             &trans           &trans           &trans
             >;
         };
 
@@ -113,20 +113,20 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &none         &none         &none     &none     &none        &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none     &none     &none        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans    &trans    &trans       &trans     &trans     &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&trans  &none     &none   &none     &none     &none        &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans    &trans  &none     &none     &none        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                          &trans    &trans    &trans       &trans     &trans     &trans
             >;
         };
 
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans      &kp F1      &kp F2             &kp F3           &kp F4            &kp F5             &kp F6    &kp F7         &kp F8       &kp F9     &kp F10  &kp F11
-&trans      &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &trans             &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans   &kp F12
-&bt BT_CLR  &bt_td0     &bt_td1            &bt_td2          &trans            &kp PRINTSCREEN    &trans    &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans   &kp DELETE
-                                           &trans           &trans            &mo 1              &mo 2     &trans         &trans
+&trans  &kp F1      &kp F2             &kp F3           &kp F4            &kp F5             &kp F6    &kp F7         &kp F8       &kp F9     &kp F10  &kp F11
+&trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &trans             &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans   &kp F12
+&trans  &trans      &trans             &trans           &trans            &kp PRINTSCREEN    &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans   &kp DELETE
+                                       &trans           &trans            &mo 1              &mo 2     &trans         &trans
             >;
         };
 
