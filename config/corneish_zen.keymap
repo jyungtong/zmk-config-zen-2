@@ -43,6 +43,27 @@
             #binding-cells = <0>;
             bindings = <&sk RC(RIGHT_SHIFT)>, <&sk RA(RIGHT_SHIFT)>;
         };
+
+        bt_td0: bt_td0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_TD0";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&bt BT_DISC 0>;
+        };
+
+        bt_td1: bt_td1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_TD1";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>, <&bt BT_DISC 1>;
+        };
+
+        bt_td2: bt_td2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BT_TD2";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>, <&bt BT_DISC 2>;
+        };
     };
 
     keymap {
@@ -102,10 +123,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1      &kp F2             &kp F3           &kp F4  &kp F5         &kp F6       &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
-&trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &bootloader    &bootloader  &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
-&trans  &trans      &trans             &trans           &trans  &trans         &trans       &trans  &trans  &trans  &trans           &kp DELETE
-                                       &trans           &trans  &mo 1          &mo 2        &trans  &trans
+&trans      &kp F1      &kp F2             &kp F3           &kp F4            &kp F5             &kp F6    &kp F7         &kp F8       &kp F9     &kp F10  &kp F11
+&trans      &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &trans             &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &trans   &kp F12
+&bt BT_CLR  &bt_td0     &bt_td1            &bt_td2          &trans            &kp PRINTSCREEN    &trans    &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans   &kp DELETE
+                                           &trans           &trans            &mo 1              &mo 2     &trans         &trans
             >;
         };
 
