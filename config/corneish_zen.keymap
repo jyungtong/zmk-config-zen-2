@@ -120,10 +120,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans        &trans           &trans          &trans             &trans            &td_reset_bootloader    &trans           &trans           &trans           &trans           &trans  &trans
-&out OUT_TOG  &bt BT_CLR       &bt_td0         &bt_td1            &bt_td2           &trans                  &trans           &trans           &trans           &trans           &trans  &trans
-&trans        &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON  &rgb_ug RGB_EFF         &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans  &trans
-                                               &trans             &trans            &trans                  &trans           &trans           &trans
+&trans        &trans           &trans          &trans             &sys_reset        &bootloader        &trans           &trans           &trans           &trans           &trans  &trans
+&out OUT_TOG  &bt BT_CLR       &bt_td0         &bt_td1            &bt_td2           &trans             &trans           &trans           &trans           &trans           &trans  &trans
+&trans        &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON  &rgb_ug RGB_EFF    &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans  &trans
+                                               &trans             &trans            &trans             &trans           &trans           &trans
             >;
         };
 
@@ -137,10 +137,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &td_reset_bootloader  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &none     &none   &none     &none     &none        &kp MINUS             &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans    &trans  &none     &none     &none        &kp UNDER             &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                          &trans    &trans    &trans       &trans                &trans     &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &bootloader  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&trans  &none     &none   &none     &none     &none        &kp MINUS    &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &trans    &trans  &none     &none     &none        &kp UNDER    &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                          &trans    &trans    &trans       &trans       &trans     &trans
             >;
         };
 
