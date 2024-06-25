@@ -32,7 +32,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "1ctrlshift-2altshift";
             #binding-cells = <0>;
-            bindings = <&sk RC(RIGHT_SHIFT)>, <&sk RA(RIGHT_SHIFT)>;
+            bindings = <&sk LA(LEFT_SHIFT)>, <&kp LC(LEFT_SHIFT)>;
         };
 
         bt_td0: bt_td0 {
