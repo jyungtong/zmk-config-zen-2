@@ -32,7 +32,10 @@
             compatible = "zmk,behavior-tap-dance";
             label = "altshift-ctrlshift";
             #binding-cells = <0>;
-            bindings = <&sk LA(LEFT_SHIFT)>, <&sk LC(LEFT_SHIFT)>;
+            bindings =
+                <&sk LA(LEFT_SHIFT)>,
+                <&sk LC(LEFT_SHIFT)>,
+                <&sk LG(LEFT_SHIFT)>;
         };
 
         bt_td0: bt_td0 {
@@ -60,7 +63,10 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD2";
             #binding-cells = <0>;
-            bindings = <&sk RG(RIGHT_SHIFT)>, <&sk RA(RIGHT_SHIFT)>;
+            bindings =
+                <&sk LG(LEFT_SHIFT)>,
+                <&sk LC(LEFT_SHIFT)>,
+                <&sk LA(LEFT_SHIFT)>;
         };
     };
 
