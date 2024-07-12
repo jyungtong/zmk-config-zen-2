@@ -13,7 +13,10 @@
 
 &lt { flavor = "balanced"; };
 
-&mt { flavor = "balanced"; };
+&mt {
+    flavor = "hold-preferred";
+    tapping-term-ms = <125>;
+};
 
 / {
     chosen {
