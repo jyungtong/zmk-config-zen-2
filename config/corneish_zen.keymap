@@ -114,20 +114,20 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE          &kp Q  &kp W  &kp E         &kp R        &kp T              &kp Y        &kp U                     &kp I         &kp O    &kp P     &kp BACKSLASH
-&mt LEFT_SHIFT TAB  &kp A  &kp S  &kp D         &kp F        &kp G              &kp H        &kp J                     &kp K         &kp L    &kp SEMI  &shift_apostrophe RIGHT_SHIFT APOSTROPHE
-&kp LEFT_CONTROL    &kp Z  &kp X  &kp C         &kp V        &kp B              &kp N        &kp M                     &kp COMMA     &kp DOT  &kp FSLH  &td1
-                                  &kp LEFT_ALT  &lt 3 SPACE  &lt 2 BACKSPACE    &lt 2 ENTER  &ht_layer3_space 3 SPACE  &kp LEFT_GUI
+&kp ESCAPE          &kp Q  &kp W  &kp E         &kp R                     &kp T              &kp Y        &kp U                     &kp I         &kp O    &kp P     &kp BACKSLASH
+&mt LEFT_SHIFT TAB  &kp A  &kp S  &kp D         &kp F                     &kp G              &kp H        &kp J                     &kp K         &kp L    &kp SEMI  &shift_apostrophe RIGHT_SHIFT APOSTROPHE
+&kp LEFT_CONTROL    &kp Z  &kp X  &kp C         &kp V                     &kp B              &kp N        &kp M                     &kp COMMA     &kp DOT  &kp FSLH  &td1
+                                  &kp LEFT_ALT  &ht_layer3_space 3 SPACE  &lt 2 BACKSPACE    &lt 2 ENTER  &ht_layer3_space 3 SPACE  &kp LEFT_GUI
             >;
         };
 
         mac_layer {
             display-name = "MAC";
             bindings = <
-&kp ESCAPE          &kp Q  &kp W  &kp E     &kp R        &kp T              &kp Y        &kp U                     &kp I         &kp O    &kp P     &kp BACKSLASH
-&mt LEFT_SHIFT TAB  &kp A  &kp S  &kp D     &kp F        &kp G              &kp H        &kp J                     &kp K         &kp L    &kp SEMI  &shift_apostrophe RIGHT_SHIFT APOSTROPHE
-&kp LEFT_CONTROL    &kp Z  &kp X  &kp C     &kp V        &kp B              &kp N        &kp M                     &kp COMMA     &kp DOT  &kp FSLH  &td2
-                                  &kp LGUI  &lt 3 SPACE  &lt 2 BACKSPACE    &lt 2 ENTER  &ht_layer3_space 3 SPACE  &kp LEFT_ALT
+&kp ESCAPE          &kp Q  &kp W  &kp E     &kp R   &kp T              &kp Y        &kp U   &kp I         &kp O    &kp P     &kp BACKSLASH
+&mt LEFT_SHIFT TAB  &kp A  &kp S  &kp D     &kp F   &kp G              &kp H        &kp J   &kp K         &kp L    &kp SEMI  &shift_apostrophe RIGHT_SHIFT APOSTROPHE
+&kp LEFT_CONTROL    &kp Z  &kp X  &kp C     &kp V   &kp B              &kp N        &kp M   &kp COMMA     &kp DOT  &kp FSLH  &td2
+                                  &kp LGUI  &trans  &lt 2 BACKSPACE    &lt 2 ENTER  &trans  &kp LEFT_ALT
             >;
         };
 
