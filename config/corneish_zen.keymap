@@ -92,7 +92,7 @@
         ht_layer3_space: ht_layer3_space {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_LAYER3_SPACE";
-            bindings = <&to>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
